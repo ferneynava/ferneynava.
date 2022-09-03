@@ -1,0 +1,114 @@
+:root{
+    --Yellow: #F5FF01;
+    --Orange: #F78101;
+    --font: 'Merriweather Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: var(--Yellow);
+    background: -webkit-linear-gradient(left, var(--Yellow), var(--Orange));
+    background: -moz-linear-gradient(left, var(--Yellow), var(--Orange));
+    background: linear-gradient(to right, var(--Yellow), var(--Orange));
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    justify-items: center;
+    gap: 50px;
+}
+
+.wrapper{
+    perspective: 1000px;
+    z-index: -1;
+}
+
+.glassmorphism-site{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(2, 5, 41, 0.904);
+    backdrop-filter: blur(6.5px);
+    backdrop-filter: saturate( 200px );
+    -webkit-backdrop-filter: saturate( 200px );
+    border-radius: 10px;
+    border: 4px solid rgba(0,0,0,0.639093137254902);
+}
+
+.card{
+    width: 1000px;
+    aspect-ratio: 18/9;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.border2{
+    width: 97%;
+    height: 94%;
+    position: absolute;
+    border: 4px solid rgba(53, 52, 52, 0.486);
+}
+
+.data{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data > h1{
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 55px;
+    color: #333333;
+    margin-bottom: 10px;
+    perspective: 1000px;
+}
+
+.data > p{
+    font-family: var(--font);
+    margin: 2px 60px 0 60px;
+    padding: 0 150px 20px 150px ;
+    border-bottom: 2px solid rgba(0,0,0,0.639093137254902);
+}
+
+.container_description{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 40px 50px 0;
+}
+
+.imagen_perfil{
+    width: 170%;
+    height: 300px;
+    background: rgba(48, 48, 48, 0.747);
+    position: relative;
+    margin-left: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(2, 5, 41, 0.904);
+    perspective: 1000px;
+}
+
+.foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.description > p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+

@@ -1,0 +1,10 @@
+.vscode
+### Images ###
+Imagenes/
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+*.png
