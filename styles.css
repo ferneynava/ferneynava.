@@ -100,6 +100,14 @@ body{
     margin: 40px 40px 50px 0;
 }
 
+
+.wrapper__text--secondary{
+    font-family:  var(--fontDescription);
+    font-size: 19px;
+    font-weight: bold;
+    text-align: justify;
+}
+
 .wrapper__image{
     width: 170%;
     height: 300px;
@@ -119,12 +127,14 @@ body{
     height: 100%;
 }
 
-.wrapper__text--secondary{
-    font-family:  var(--fontDescription);
-    font-size: 19px;
-    font-weight: bold;
-    text-align: justify;
+.wrapper__avatar--size{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 500px;
+    right: 0 ;
 }
+
 
 .container__icons{
     display: flex;
