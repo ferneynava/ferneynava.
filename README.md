@@ -8,8 +8,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -32,8 +30,6 @@
     <a href="https://github.com/ferneynava/ferneynava./issues">Solicitar función</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -58,10 +54,7 @@
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
-## Acerca del proyecto
+## Acerca del proyecto🚀
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/ferneynava/ferneynava.)
 
@@ -69,15 +62,12 @@ Este es mi web personal donde podrás encontrar información sobre mi perfil pro
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-
-
-### Construido con
+### Tecnologías🔧
 
 * ![HTML]
 * ![CSS]
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
-
 
 ### Instalación
 
@@ -100,9 +90,6 @@ Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y crea una 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-
-
-<!-- LICENSE -->
 ## License
 
 Distribuido bajo la licenia MIT. Consulte `LICENSE.txt` para obtener más información.
