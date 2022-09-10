@@ -37,7 +37,7 @@ body{
 
 .glassmorphism{
     background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 var(--colorBoxShadow);
+    box-shadow: 0 8px 32px 0 var(--colorBoxShadow); 
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     border-radius: 10px;
@@ -69,7 +69,7 @@ body{
     width: 900px;
     height: 70%;
     background: var(--coffee);
-    box-shadow: 0 8px 32px 0 var(--colorBoxShadow);
+    filter: drop-shadow(12px 12px 4px var(--colorBoxShadow));
     display: grid;
     place-content: center;
     margin-top: 40px;
@@ -116,7 +116,7 @@ body{
     margin-left: 40px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 32px 0 var(--colorBoxShadow);
+    filter: drop-shadow(13px 13px 4px var(--colorBoxShadow));
     perspective: var(--max);
     border: 4px solid rgba(0,0,0,0.639093137254902);
 }
@@ -139,5 +139,9 @@ body{
 .container__icons{
     display: flex;
     gap: 20px;
+}
+
+.container__icons > a:hover{
+    filter: drop-shadow(8px 8px 4px var(--colorBoxShadow));
 }
 
