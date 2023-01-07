@@ -26,3 +26,4 @@ window.addEventListener("mouseout", () => {
         imagen_perfil.style.transition = "transform .5s ease-in-out";
         imagen_perfil.style.transform = "rotateX(0deg) rotateY(0deg)";
 })
+

@@ -16,13 +16,71 @@
 
 body{
     margin: 0;
-    background: var(--Yellow);
+    /* background: var(--Yellow);
     background: -webkit-linear-gradient(left, var(--Yellow), var(--Orange));
     background: -moz-linear-gradient(left, var(--Yellow), var(--Orange));
-    background: linear-gradient(to right, var(--Yellow), var(--Orange));
+    background: linear-gradient(to right, var(--Yellow), var(--Orange)); */
+    background-color: #141311;
     display: grid;
     place-content: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(150px);
+}
+
+.gradient{
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.6;
+    mix-blend-mode: screen;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+}
+
+.gradient-1{
+    background: rgb(251, 104, 45) none repeat scroll 0% 0% / auto padding-box border-box;
+    width: 700px;
+    height: 700px;
+    animation-duration: 11s;
+    opacity: 0.6;
+    left: 60%;
+    top: 40%;
+    z-index: -2;
+    animation-name: animation-gradient-1;
+}
+
+.gradient-2 {
+    background: rgb(234, 210, 77) none repeat scroll 0% 0% / auto padding-box border-box;
+    width: 600px;
+    height: 600px;
+    animation-duration: 11s;
+    opacity: 0.6;
+    left: 40%;
+    top: 60%;
+    z-index: -1;
+    animation-name: animation-gradient-2;
+}
+
+.gradient-3 {
+    background: rgb(4, 0, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    width: 500px;
+    height: 500px;
+    animation-duration: 11s;
+    opacity: 0.6;
+    left: 50%;
+    top: 50%;
+    z-index: -3;
+    animation-name: animation-gradient-3;
 }
 
 .container{
@@ -140,13 +198,79 @@ body{
     right: 0 ;
 }
 
-
 .container__icons{
     display: flex;
     gap: 20px;
+    z-index: 1;
 }
 
 .container__icons > a:hover{
     filter: drop-shadow(8px 8px 4px var(--colorBoxShadow));
 }
+path{
+    fill: white;
+}
+@keyframes animation-gradient-1 {
+    0% {
+        transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
+    }
+    25% {
+        transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+        rotate(80deg) translateX(30%);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
+    }
+    75% {
+        transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+        rotate(240deg) translateX(15%);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
+    }
+}
 
+@keyframes animation-gradient-2 {
+    0% {
+        transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+    }
+    25% {
+        transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+        rotate(110deg) translateX(-5%);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+    }
+    75% {
+        transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+        rotate(300deg) translateX(-10%);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+    }
+  }
+  
+  @keyframes animation-gradient-3 {
+    0% {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%)
+        translateY(10%);
+    }
+    20% {
+        transform: translateY(-50%) translateX(-50%) translateX(20%)
+        translateY(-30%);
+    }
+    40% {
+        transform: translateY(-50%) translateX(-50%) translateX(-25%)
+        translateY(-15%);
+    }
+    60% {
+        transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+    }
+    80% {
+        transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%)
+        translateY(10%);
+    }
+}
