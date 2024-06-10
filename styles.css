@@ -157,6 +157,7 @@ body{
     font-family: var(--fontData);
     margin: 30px 60px 0 60px;
     padding: 0 150px 20px 150px ;
+    text-align: center;
     border-bottom: 2px solid var(--colorBorder);
 }
 
@@ -206,6 +207,20 @@ body{
 path{
     fill: white;
 }
+
+
+#resaltador{
+    font-weight: bold;
+}
+strong{
+    color: #2f04ff;
+}	
+.containerRight-Perfil{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px 33px;
+}
+
 @keyframes animation-gradient-1 {
     0% {
         transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
